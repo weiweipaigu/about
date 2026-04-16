@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | 瑋瑋老師的撒野記事錄</title>
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --card: #ffffff;
+      --text: #2f3a33;
+      --muted: #66756b;
+      --line: #dfe6df;
+      --accent: #5d7a67;
+      --accent-soft: #e8efe8;
+      --max: 1040px;
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 245, 239, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      gap: 16px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .menu {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .hero {
+      padding: 56px 0 28px;
+    }
+
+    .hero-box {
+      background: linear-gradient(135deg, #eef4ee, #fbfaf6);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 34px 28px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin: 0 0 14px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      margin: 0 0 14px;
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 1.03rem;
+    }
+
+    .section {
+      padding: 10px 0 28px;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+    }
+
+    .card-body {
+      padding: 24px;
+    }
+
+    .portrait-box {
+      aspect-ratio: 1 / 1;
+      background: #dfe6df;
+    }
+
+    .portrait-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .intro-card p:last-child,
+    .list-card ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .list-card ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--text);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .gallery-item {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      background: #dfe6df;
+    }
+
+    .gallery-caption {
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    footer {
+      padding: 24px 0 48px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 860px) {
+      .profile-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-box,
+      .card-body {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">瑋瑋老師的撒野記事錄</div>
+      <div class="menu">
+        <a href="https://weiweipaigu.github.io/home/">Home</a>
+        <a href="https://weiweipaigu.github.io/calendar/">Calendar</a>
+        <a href="https://weiweipaigu.github.io/shopping/">Shopping</a>
+        <a href="https://weiweipaigu.github.io/about/">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-box">
+        <h1>關於我 / About</h1>
+        <p class="lead">我是誰呢？只是一位熱愛觀察和說故事的普通人。</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="profile-grid">
+          <article class="card">
+            <div class="portrait-box">
+              <img src="images/profile.jpg" alt="大頭照片" />
+            </div>
+          </article>
+
+          <article class="card intro-card">
+            <div class="card-body">
+              <h2>文字簡介</h2>
+              <p>嗨，大家好，我是瑋瑋老師啦。</p>
+              <p>不知道大家是否喜歡「觀察」這件事？我很喜歡呢，不知不覺中，這也成為我的日常生活最重要的一件事。觀察那片樹皮上的苔癬、觀察泥土洞中的小昆蟲、觀察樹林間的腳步聲...</p>
+              <p>自 2019 年起，開始從事生態講師的工作，著重於親子團體的戶外活動帶領。帶著孩子們爬爬山、逛公園、下海水，用眼睛、手足，去觀察、體驗身邊那些常被忽略的小事物。至今已逾千場活動，在這過程中，除了教孩子們知識，更致力於同時將生態觀念傳遞給大家；除了對生物感到好奇、喜愛，更重要的是讓大家願意一起保護原生生態系。</p>
+              <p>我體能不好，所以不會帶大家跑跑跳跳，但我擅長講故事、擅長分享新知識。不分年齡，相信都能享受在這趟慢活的生態旅程之中。</p>
+              <p>不過我想各位家長，最享受的還是聽我上課講笑話的氣氛（笑）。</p>
+              <div class="tag-list">
+                <span class="tag">親子生態活動</span>
+                <span class="tag">成人生態活動</span>
+                <span class="tag">科普教育</span>
+                <span class="tag">ESG 講座</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="card list-card">
+          <div class="card-body">
+            <h2>學歷</h2>
+            <ul>
+              <li>國立臺灣大學　海洋研究所　生物組</li>
+              <li>國立中興大學　生命科學系</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="card list-card">
+          <div class="card-body">
+            <h2>經歷</h2>
+            <ul>
+              <li>《瑋瑋老師的撒野記事錄》科普粉專主編</li>
+              <li>《跟小白老師玩著學》團隊講師</li>
+              <li>數感實驗室合作講師</li>
+              <li>多家幼兒園合作室內生態觀察講師</li>
+              <li>企業 CSR、ESG 活動講師</li>
+              <li>北市外籍高中生全英文生態活動講師</li>
+              <li>亞洲魚類學會議暨太平洋魚類學會會議生態活動講師（全英）</li>
+              <li>兒童科普書籍審定</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="card list-card">
+          <div class="card-body">
+            <h2>服務項目</h2>
+            <ul>
+              <li>親子生態活動（日間、夜間）</li>
+              <li>成人生態活動（日間、夜間）</li>
+              <li>寒暑假學生營隊</li>
+              <li>各級學校、補習班室內生態講座</li>
+              <li>企業 ESG 活動、SDGs 講座</li>
+              <li>科普書籍審定</li>
+              <li>社群廣告合作</li>
+            </ul>
+            <p>任何合作請聯繫粉絲頁或是 E-mail 聯繫。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>活動照片</h2>
+        <div class="photo-gallery">
+          <article class="gallery-item">
+            <img src="images/activity1.jpg" alt="活動照片 1" />
+            <div class="gallery-caption">企業ESG活動 (賽諾菲)</div>
+          </article>
+
+          <article class="gallery-item">
+            <img src="images/activity2.jpg" alt="活動照片 2" />
+            <div class="gallery-caption">親子生態活動</div>
+          </article>
+
+          <article class="gallery-item">
+            <img src="images/activity3.jpg" alt="活動照片 3" />
+            <div class="gallery-caption">夜間生態觀察</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 瑋瑋老師的撒野記事錄 · About Page
+    </div>
+  </footer>
+</body>
+</html>
