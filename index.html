@@ -3,226 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | 瑋瑋老師的撒野記事錄</title>
+
+  <title>關於瑋瑋老師｜台灣生態導覽・自然教育｜瑋瑋老師的撒野記事錄</title>
+  <meta name="description" content="認識瑋瑋老師：2019 年起投入生態教育與親子自然活動，累積超過千場導覽與課程，分享台灣生態、城市自然、夜間觀察與科學故事。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://about.weiweipaigu.com/" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="瑋瑋老師的撒野記事錄" />
+  <meta property="og:title" content="關於瑋瑋老師｜台灣生態導覽・自然教育" />
+  <meta property="og:description" content="把生態知識變成好懂、好記，也讓人想繼續往自然裡走的故事。" />
+  <meta property="og:url" content="https://about.weiweipaigu.com/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://about.weiweipaigu.com/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "瑋瑋老師",
+      "jobTitle": "生態導覽員／生態教育講師",
+      "description": "2019 年起投入生態教育與親子自然活動，累積超過千場導覽與課程。",
+      "sameAs": [
+        "https://www.facebook.com/weiweipaigu",
+        "https://www.instagram.com/weiweipaigu/",
+        "https://www.youtube.com/@weiweipaigu"
+      ]
+    }
+  }
+  </script>
+
   <style>
-    :root {
-      --bg: #f7f5ef;
-      --card: #ffffff;
-      --text: #2f3a33;
-      --muted: #66756b;
-      --line: #dfe6df;
-      --accent: #5d7a67;
-      --accent-soft: #e8efe8;
-      --max: 1040px;
-      --radius: 18px;
+    :root{
+      --bg:#f7f5ef;--card:#fff;--text:#2f3a33;--muted:#66756b;--line:#dfe6df;
+      --accent:#5d7a67;--accent-soft:#e8efe8;--warm:#f3eee2;--max:1040px;
     }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", "Noto Sans TC", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(92%,var(--max));margin:0 auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0}
+    .brand{font-weight:700;letter-spacing:.02em;white-space:nowrap;flex-shrink:0}
+    .menu{display:flex;align-items:center;gap:18px;flex-wrap:nowrap;white-space:nowrap;color:var(--muted);font-size:.95rem}
+    .menu a:hover{color:var(--accent)}
+    .hero{padding:52px 0 26px}
+    .hero-box{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(240px,.7fr);gap:28px;align-items:center;background:linear-gradient(135deg,#eef4ee,#fbfaf6);border:1px solid var(--line);border-radius:28px;padding:34px 32px}
+    h1,h2,h3{line-height:1.3;margin:0 0 12px}
+    h1{font-size:clamp(2rem,5vw,3rem)}h2{font-size:1.55rem}h3{font-size:1.08rem}p{margin:0 0 13px}
+    .lead{color:var(--muted);font-size:1.04rem;max-width:700px}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:700}
+    .btn.secondary{background:transparent;color:var(--accent)}
+    .profile-photo{width:min(100%,280px);aspect-ratio:1/1;margin:0 auto;border-radius:50%;overflow:hidden;border:8px solid rgba(255,255,255,.7);box-shadow:0 12px 30px rgba(47,58,51,.12);background:var(--accent-soft);position:relative}
+    .profile-photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .profile-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:5rem;font-weight:800;color:var(--accent)}
+    .section{padding:10px 0 30px}
+    .section-head{margin-bottom:16px}.section-head p{color:var(--muted);margin:0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 10px 28px rgba(0,0,0,.035)}
+    .story{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+    .highlight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .highlight{background:#fbfbf8;border:1px solid var(--line);border-radius:17px;padding:18px}
+    .highlight-number{font-size:1.55rem;line-height:1.2;font-weight:800;color:var(--accent);margin-bottom:6px}
+    .highlight-label{color:var(--muted);font-size:.9rem}
+    .quote{height:100%;display:flex;flex-direction:column;justify-content:center;background:var(--warm)}
+    .quote-mark{font-size:2.8rem;line-height:1;color:var(--accent);opacity:.55}
+    .quote p{font-size:1.08rem;font-weight:600}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .timeline{display:grid;gap:14px}
+    .timeline-item{position:relative;padding-left:22px}
+    .timeline-item::before{content:"";position:absolute;left:2px;top:.65em;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+    .timeline-item::after{content:"";position:absolute;left:6px;top:1.4em;bottom:-18px;width:1px;background:var(--line)}
+    .timeline-item:last-child::after{display:none}
+    .timeline-title{font-weight:750}.timeline-text{color:var(--muted);font-size:.93rem}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .service-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+    .service-icon{font-size:1.65rem;margin-bottom:8px}
+    .service-card p{color:var(--muted);font-size:.93rem;margin:0}
+    .topic-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+    .topic{display:inline-flex;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.88rem;font-weight:700}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .gallery-item{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#eee}
+    .gallery-item img{display:block;width:100%;height:auto}
+    .contact-card{background:linear-gradient(135deg,#e8efe8,#fff);display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+    .contact-card p{color:var(--muted);max-width:680px}
+    .socials{display:flex;gap:9px;flex-wrap:wrap}
+    .social-link{display:inline-flex;padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--accent);font-weight:700;font-size:.9rem}
+    footer{padding:20px 0 48px;color:var(--muted);font-size:.92rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .footer-links{display:flex;gap:14px;flex-wrap:wrap}
+    .footer-links a{text-decoration:underline;text-underline-offset:3px}
+    @media(max-width:820px){
+      .hero-box{grid-template-columns:1fr}.profile-photo{width:210px;grid-row:1}
+      .story,.two-col,.contact-card{grid-template-columns:1fr}.highlight-grid{grid-template-columns:repeat(2,1fr)}
+      .service-grid{grid-template-columns:1fr 1fr}
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
+    @media(max-width:700px){
+      .nav-inner{display:block;padding:10px 0 8px}.brand{display:block;font-size:.96rem;margin-bottom:6px}
+      .menu{width:100%;gap:18px;overflow-x:auto;padding-bottom:2px;font-size:.88rem;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+      .menu::-webkit-scrollbar{display:none}.hero{padding:30px 0 20px}.hero-box,.card{padding:20px}
+      .service-grid,.gallery{grid-template-columns:1fr}.hero-actions{display:grid}.hero-actions .btn{width:100%}.footer-inner{display:grid}
     }
-
-    .wrap {
-      width: min(92%, var(--max));
-      margin: 0 auto;
-    }
-
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(247, 245, 239, 0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .nav-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 0;
-      gap: 16px;
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-
-    .menu {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    .hero {
-      padding: 56px 0 28px;
-    }
-
-    .hero-box {
-      background: linear-gradient(135deg, #eef4ee, #fbfaf6);
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 34px 28px;
-    }
-
-    h1, h2, h3 {
-      line-height: 1.25;
-      margin: 0 0 14px;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-    }
-
-    h2 {
-      font-size: 1.35rem;
-      margin-bottom: 12px;
-    }
-
-    p, li {
-      margin: 0 0 14px;
-    }
-
-    .lead {
-      color: var(--muted);
-      max-width: 760px;
-      font-size: 1.03rem;
-    }
-
-    .section {
-      padding: 10px 0 28px;
-    }
-
-    .profile-grid {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 22px;
-      align-items: stretch;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
-      overflow: hidden;
-    }
-
-    .card-body {
-      padding: 24px;
-    }
-
-    .portrait-box {
-      aspect-ratio: 1 / 1;
-      background: #dfe6df;
-    }
-
-    .portrait-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .intro-card p:last-child,
-    .list-card ul:last-child {
-      margin-bottom: 0;
-    }
-
-    .list-card ul {
-      margin: 0;
-      padding-left: 1.2rem;
-      color: var(--text);
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.92rem;
-    }
-
-    .photo-gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .gallery-item {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
-      overflow: hidden;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      display: block;
-      background: #dfe6df;
-    }
-
-    .gallery-caption {
-      padding: 14px 16px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    footer {
-      padding: 24px 0 48px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 860px) {
-      .profile-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .photo-gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-box,
-      .card-body {
-        padding: 22px;
-      }
-    }
+    @media(max-width:430px){.highlight-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <nav class="nav">
     <div class="wrap nav-inner">
-      <div class="brand">瑋瑋老師的撒野記事錄</div>
-      <div class="menu">
-        <a href="https://weiweipaigu.github.io/home/">Home</a>
-        <a href="https://weiweipaigu.github.io/calendar/">Calendar</a>
-        <a href="https://weiweipaigu.github.io/shopping/">Shopping</a>
-        <a href="https://weiweipaigu.github.io/about/">About</a>
+      <a class="brand" href="https://www.weiweipaigu.com">瑋瑋老師的撒野記事錄</a>
+      <div class="menu" aria-label="主選單">
+        <a href="https://www.weiweipaigu.com">Home</a>
+        <a href="https://calendar.weiweipaigu.com">Calendar</a>
+        <a href="https://shopping.weiweipaigu.com">Shopping</a>
+        <a href="https://about.weiweipaigu.com">About</a>
       </div>
     </div>
   </nav>
@@ -230,8 +126,20 @@
   <header class="hero">
     <div class="wrap">
       <div class="hero-box">
-        <h1>關於我 / About</h1>
-        <p class="lead">我是誰呢？只是一位熱愛觀察和說故事的普通人。</p>
+        <div>
+          <h1>關於瑋瑋老師 / About</h1>
+          <p class="lead">我喜歡帶著大家走進自然，也喜歡把那些看似艱深的生物知識，變成小朋友聽得懂、大人也會覺得有趣的故事。</p>
+          <p class="lead">從城市公園、夜間步道，到溪流、森林與校園，只要願意多停一下、多看一眼，我們身邊其實一直都有很多值得認識的生命。</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://calendar.weiweipaigu.com">看看近期活動</a>
+            <a class="btn secondary" href="mailto:wesker.hung@outlook.com">合作與邀約</a>
+          </div>
+        </div>
+
+        <div class="profile-photo">
+          <div class="profile-fallback" id="profileFallback">瑋</div>
+          <img src="images/profile.jpg" alt="瑋瑋老師" onload="document.getElementById('profileFallback').style.display='none'" onerror="this.style.display='none'">
+        </div>
       </div>
     </div>
   </header>
@@ -239,114 +147,150 @@
   <main>
     <section class="section">
       <div class="wrap">
-        <div class="profile-grid">
+        <div class="highlight-grid">
+          <div class="highlight"><div class="highlight-number">2019+</div><div class="highlight-label">投入生態教育與親子自然活動</div></div>
+          <div class="highlight"><div class="highlight-number">1,000+</div><div class="highlight-label">累積導覽、課程與活動場次</div></div>
+          <div class="highlight"><div class="highlight-number">親子 × 校園</div><div class="highlight-label">一般民眾、中小學生與家庭活動</div></div>
+          <div class="highlight"><div class="highlight-number">日間 × 夜間</div><div class="highlight-label">從城市自然到夜間生態觀察</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>我在做什麼？</h2>
+          <p>不只找動物，更希望讓觀察變成理解自然的一種方式。</p>
+        </div>
+
+        <div class="story">
           <article class="card">
-            <div class="portrait-box">
-              <img src="images/profile.jpg" alt="大頭照片" />
-            </div>
+            <p>2019 年開始，我陸續投入生態講師、親子自然活動與戶外導覽工作。從一開始帶著大家認識步道上的青蛙、蛇、昆蟲與鳥類，到後來逐漸把演化、生態學、動物行為與最新研究放進導覽裡，我越來越確定一件事：<strong>自然教育真正有趣的地方，不只是「這是什麼物種」，而是「牠為什麼會這樣生活」。</strong></p>
+            <p>因此在我的活動裡，除了辨認物種，也常會談到動物如何適應環境、不同生物之間如何互動、人類活動如何改變棲地，以及我們可以怎麼和城市裡的野生動物相處。</p>
+            <p>我也很喜歡用故事、生活經驗與近期科學研究來解釋生態現象。如果一場導覽結束之後，大家回家還會繼續查資料、和家人討論，或是下次走在路上開始多注意一隻蜘蛛、一聲蛙鳴，那就是我最希望留下的東西。</p>
           </article>
 
-          <article class="card intro-card">
-            <div class="card-body">
-              <h2>文字簡介</h2>
-              <p>嗨，大家好，我是瑋瑋老師啦。</p>
-              <p>不知道大家是否喜歡「觀察」這件事？我很喜歡呢，不知不覺中，這也成為我的日常生活最重要的一件事。觀察那片樹皮上的苔癬、觀察泥土洞中的小昆蟲、觀察樹林間的腳步聲...</p>
-              <p>自 2019 年起，開始從事生態講師的工作，著重於親子團體的戶外活動帶領。帶著孩子們爬爬山、逛公園、下海水，用眼睛、手足，去觀察、體驗身邊那些常被忽略的小事物。至今已逾千場活動，在這過程中，除了教孩子們知識，更致力於同時將生態觀念傳遞給大家；除了對生物感到好奇、喜愛，更重要的是讓大家願意一起保護原生生態系。</p>
-              <p>我體能不好，所以不會帶大家跑跑跳跳，但我擅長講故事、擅長分享新知識。不分年齡，相信都能享受在這趟慢活的生態旅程之中。</p>
-              <p>不過我想各位家長，最享受的還是聽我上課講笑話的氣氛（笑）。</p>
-              <div class="tag-list">
-                <span class="tag">親子生態活動</span>
-                <span class="tag">成人生態活動</span>
-                <span class="tag">科普教育</span>
-                <span class="tag">ESG 講座</span>
+          <aside class="card quote">
+            <div class="quote-mark">“</div>
+            <p>生態導覽不是把自然界的答案全部講完，而是讓人離開之後，開始對身邊的生命多問幾個問題。</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="two-col">
+          <article class="card">
+            <h2>學習背景</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-title">國立臺灣大學 海洋研究所 生物組｜碩士</div>
+                <div class="timeline-text">主修系統分類學、生物地理學。</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-title">國立中興大學 生命科學系｜學士</div>
+                <div class="timeline-text">接受生命科學與生物學基礎訓練。</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-title">持續學習生態知識與自然科學</div>
+                <div class="timeline-text">長期閱讀生態、動物行為、演化與保育相關研究，並轉化為導覽與科普內容。</div>
               </div>
             </div>
           </article>
+
+          <article class="card">
+            <h2>工作與教學</h2>
+            <div class="timeline">
+              <div class="timeline-item"><div class="timeline-title">生態導覽與自然教育</div><div class="timeline-text">自 2019 年起投入親子團、一般民眾與學生的戶外自然活動。</div></div>
+              <div class="timeline-item"><div class="timeline-title">超過千場活動經驗</div><div class="timeline-text">累積不同年齡、場域與主題的導覽、課程及講座經驗。</div></div>
+              <div class="timeline-item"><div class="timeline-title">科學故事與新知轉譯</div><div class="timeline-text">把研究文獻與自然史知識轉成適合一般大眾與孩子理解的內容。</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>可以找我做什麼？</h2>
+          <p>活動內容可以依對象、地點、年齡與時間長度調整。</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon">🌿</div><h3>戶外生態導覽</h3><p>城市公園、郊山步道、溪流與其他自然場域的日間或夜間觀察活動。</p></article>
+          <article class="service-card"><div class="service-icon">👨‍👩‍👧‍👦</div><h3>親子自然教育</h3><p>以故事、觀察與互動為主，讓孩子與家長一起認識台灣身邊的野生動物。</p></article>
+          <article class="service-card"><div class="service-icon">🏫</div><h3>校園課程與講座</h3><p>依年級與課程需求設計生態、演化、動物行為、保育等主題內容。</p></article>
+          <article class="service-card"><div class="service-icon">🎤</div><h3>企業／團體活動</h3><p>可依團體需求規劃自然體驗、科普分享或戶外導覽。</p></article>
+          <article class="service-card"><div class="service-icon">🔦</div><h3>夜間生態觀察</h3><p>以兩棲爬蟲、夜行性昆蟲、鳥類與哺乳類等夜間動物為主要觀察對象。</p></article>
+          <article class="service-card"><div class="service-icon">🌏</div><h3>英文生態導覽</h3><p>可為海外訪客、國際團體或學術交流活動提供英文自然導覽。</p></article>
+        </div>
+
+        <div class="topic-row" aria-label="常見主題">
+          <span class="topic">兩棲爬蟲</span><span class="topic">鳥類</span><span class="topic">蜘蛛</span><span class="topic">昆蟲</span>
+          <span class="topic">動物行為</span><span class="topic">演化</span><span class="topic">城市生態</span>
+          <span class="topic">生態保育</span><span class="topic">夜間觀察</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallerySection">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>活動紀錄</h2>
+          <p>一些在戶外、課堂與自然裡留下的畫面。</p>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <div class="gallery-item"><img src="images/about1.jpg" alt="瑋瑋老師生態導覽活動照片" loading="lazy" onerror="removeGalleryItem(this)"></div>
+          <div class="gallery-item"><img src="images/about2.jpg" alt="親子自然教育活動照片" loading="lazy" onerror="removeGalleryItem(this)"></div>
+          <div class="gallery-item"><img src="images/about3.jpg" alt="夜間生態觀察活動照片" loading="lazy" onerror="removeGalleryItem(this)"></div>
+          <div class="gallery-item"><img src="images/about4.jpg" alt="戶外生態課程活動照片" loading="lazy" onerror="removeGalleryItem(this)"></div>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <article class="card list-card">
-          <div class="card-body">
-            <h2>學歷</h2>
-            <ul>
-              <li>國立臺灣大學　海洋研究所　生物組</li>
-              <li>國立中興大學　生命科學系</li>
-            </ul>
+        <article class="card contact-card">
+          <div>
+            <h2>合作、講座或活動邀約</h2>
+            <p>如果想討論生態導覽、校園課程、團體活動、內容合作或其他自然教育相關邀約，歡迎透過 E-mail 或社群平台聯絡。</p>
+            <div class="socials">
+              <a class="social-link" href="mailto:wesker.hung@outlook.com">E-mail</a>
+              <a class="social-link" href="https://www.facebook.com/weiweipaigu" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a class="social-link" href="https://www.instagram.com/weiweipaigu/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a class="social-link" href="https://www.youtube.com/@weiweipaigu" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
           </div>
+          <a class="btn" href="mailto:wesker.hung@outlook.com">聯絡瑋瑋老師</a>
         </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <article class="card list-card">
-          <div class="card-body">
-            <h2>經歷</h2>
-            <ul>
-              <li>《瑋瑋老師的撒野記事錄》科普粉專主編</li>
-              <li>《跟小白老師玩著學》團隊講師</li>
-              <li>數感實驗室合作講師</li>
-              <li>多家幼兒園合作室內生態觀察講師</li>
-              <li>企業 CSR、ESG 活動講師 (賽諾菲、華新、國泰...)</li>
-              <li>北市外籍高中生全英文生態活動講師</li>
-              <li>亞洲魚類學會議暨太平洋魚類學會會議生態活動講師（全英）</li>
-              <li>兒童科普書籍審定</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <article class="card list-card">
-          <div class="card-body">
-            <h2>服務項目</h2>
-            <ul>
-              <li>親子生態活動（日間、夜間）</li>
-              <li>成人生態活動（日間、夜間）</li>
-              <li>寒暑假學生營隊</li>
-              <li>各級學校、補習班室內生態講座</li>
-              <li>企業 ESG 活動、SDGs 講座</li>
-              <li>科普書籍審定</li>
-              <li>社群廣告合作</li>
-            </ul>
-            <p>任何合作請聯繫粉絲頁或是 E-mail 聯繫。</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <h2>活動照片</h2>
-        <div class="photo-gallery">
-          <article class="gallery-item">
-            <img src="images/activity1.jpg" alt="活動照片 1" />
-            <div class="gallery-caption">企業ESG活動 (賽諾菲)</div>
-          </article>
-
-          <article class="gallery-item">
-            <img src="images/activity2.jpg" alt="活動照片 2" />
-            <div class="gallery-caption">親子生態活動</div>
-          </article>
-
-          <article class="gallery-item">
-            <img src="images/activity3.jpg" alt="活動照片 3" />
-            <div class="gallery-caption">夜間生態觀察</div>
-          </article>
-        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      © 2026 瑋瑋老師的撒野記事錄 · About Page
+    <div class="wrap footer-inner">
+      <div>© 2026 瑋瑋老師的撒野記事錄 · About</div>
+      <div class="footer-links">
+        <a href="https://privacy.weiweipaigu.com">隱私權政策</a>
+        <a href="https://terms.weiweipaigu.com">服務條款</a>
+      </div>
     </div>
   </footer>
+
+  <script>
+    function removeGalleryItem(img){
+      const item = img.closest(".gallery-item");
+      if(item) item.remove();
+      requestAnimationFrame(() => {
+        const gallery = document.getElementById("gallery");
+        if(gallery && gallery.children.length === 0){
+          document.getElementById("gallerySection").hidden = true;
+        }
+      });
+    }
+  </script>
 </body>
 </html>
